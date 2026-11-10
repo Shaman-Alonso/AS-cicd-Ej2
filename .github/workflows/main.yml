@@ -1,0 +1,12 @@
+name: Primer workflow
+on: push
+jobs:
+  ejercitador2000:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - name: ejercitador2000
+        uses: advanced-security/python-lint-code-scanning-action@v1
+        with:
+          linter: pylint
